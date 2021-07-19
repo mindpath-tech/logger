@@ -1,0 +1,38 @@
+{
+    "compilerOptions": {
+      "target": "ES2018",
+      "module": "commonjs",
+      "lib": ["ES2018", "DOM"],
+      "declaration": true,
+      "declarationMap": true,
+      "sourceMap": true,
+      "outDir": "./dist/src",
+      "removeComments": true,
+      "strict": true,
+      "strictPropertyInitialization": false,
+      "moduleResolution": "node",
+      "baseUrl": ".",
+      "allowSyntheticDefaultImports": true,
+      "esModuleInterop": true,
+      "experimentalDecorators": true,
+      "emitDecoratorMetadata": true,
+      "types": ["node"],
+      "typeRoots": ["./typings"],
+      "traceResolution": false,
+      "resolveJsonModule": true,
+      "noUnusedLocals": true
+    },
+    "include": [
+      "src/**/*"
+    ],
+    "exclude": [
+      "src/**/*.test.*",
+      "src/**/*.spec.*",
+      "tests",
+      "test/**/*",
+      "test_reports",
+      "jest.config.js",
+      "dist/**/*",
+    ]
+  }
+  
