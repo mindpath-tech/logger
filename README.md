@@ -11,7 +11,7 @@ $ npm install --save @mindpath/logger
 ### Set following env to your code.
 ```sh
 LOG_LEVEL='debug'  # Values of this property is defined under Log Levels
-LOGS_PROVIDERS=[{"name": "console"},{"name": "grafana","url": "https://example.com"}]  # Array of json object. For more details refer section Log Providers.
+LOGS_PROVIDERS='[{"name": "console"},{"name": "grafana","url": "https://example.com"}]'  # Array of json object. For more details refer section Log Providers.
 SERVICE_LABEL='mindpath-example-service' #Unique identifier for your service.
 ```
 ### Log Levels
@@ -37,10 +37,13 @@ Some of the Log providers needs there configuration properties as well.
 Follow below steps to set Log Providers in environment variable. 
 
  1. Form a json contain array of objects.
- ```sh
+ ```js
 [{"name": "console"},{"name": "grafana","url": "https://example.com"}]
  ```
- 2. Use JSON in environment variable for property LOGS_PROVIDERS.
+ 2. Use JSON as string in environment variable for property LOGS_PROVIDERS.
+  ```json
+'[{"name": "console"},{"name": "grafana","url": "https://example.com"}]'
+ ```
 
 ## TODO
 
