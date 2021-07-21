@@ -15,10 +15,10 @@
     "name": "MindPath – Intelligent Solutions",
     "email": "engineering@mindpathtech.com"
   },
-  "homepage": "https://github.com/SystangoTechnologies/swagger-generator-express/blob/master/README.md",
+  "homepage": "https://github.com/mindpath-tech/logger/blob/master/README.md",
   "repository": {
     "type": "git",
-    "url": "https://github.com/SystangoTechnologies/swagger-generator-express"
+    "url": "https://github.com/mindpath-tech/logger"
   },
   "keywords": [
     "logger",
