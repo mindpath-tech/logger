@@ -1,7 +1,7 @@
 {
   "name": "@mindpath/logger",
   "title": "logger module",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Custom logging moudle to print logs on console, file or sent it to logs visualization application such as grafana",
   "main": "dist/src/index.js",
   "types": "dist/src/index.d.ts",

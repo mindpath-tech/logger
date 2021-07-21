@@ -10,9 +10,9 @@ $ npm install --save @mindpath/logger
 
 ### Set following env to your code.
 ```sh
-LOG_LEVEL='debug'  # Values of this property is defined under Log Levels
-LOGS_PROVIDERS='[{"name": "console"},{"name": "grafana","url": "https://example.com"}]'  # Array of json object. For more details refer section Log Providers.
-SERVICE_LABEL='mindpath-example-service' #Unique identifier for your service.
+LOG_LEVEL='debug'
+LOGS_PROVIDERS='[{"name": "console"},{"name": "grafana","url": "https://example.com"}]'
+SERVICE_LABEL='mindpath-example-service'
 ```
 ### Log Levels
 Below are npm logging levels that are prioritized from 0 to 6 (highest to lowest):
@@ -44,6 +44,30 @@ Follow below steps to set Log Providers in environment variable.
   ```json
 '[{"name": "console"},{"name": "grafana","url": "https://example.com"}]'
  ```
+
+ ### Usage
+
+ ```ts
+  import logger from '@mindpath/logger';
+
+  logger.error('Print error message');
+  logger.info('Print info message');
+
+  // You can use all the levels defined in Log Levels
+
+ ```
+  Or
+
+ ```js
+ const logger = require("@mindpath/logger");
+
+ logger.error('Print error message');
+ logger.info('Print info message');
+ 
+ // You can use all the levels defined in Log Levels
+
+ ```
+
 
 ## TODO
 
