@@ -11,14 +11,11 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "prepublish": "tsc"
   },
-  "author": {
-    "name": "MindPath – Intelligent Solutions",
-    "email": "engineering@mindpathtech.com"
-  },
+  "author": "MindPath – Intelligent Solutions <engineering@mindpathtech.com>",
   "homepage": "https://github.com/mindpath-tech/logger/blob/master/README.md",
   "repository": {
     "type": "git",
-    "url": "https://github.com/mindpath-tech/logger"
+    "url": "git+https://github.com/mindpath-tech/logger.git"
   },
   "keywords": [
     "logger",
@@ -31,14 +28,11 @@
     "kibana",
     "loki transport",
     "elastic search",
-    "log provider"    
+    "log provider"
   ],
   "license": "MIT",
   "maintainers": [
-    {
-      "name": "MindPath – Intelligent Solutions",
-      "email": "engineering@mindpathtech.com"
-    }
+    "MindPath – Intelligent Solutions <engineering@mindpathtech.com>"
   ],
   "dependencies": {
     "winston": "^3.3.3",
@@ -52,5 +46,8 @@
   "files": [
     "dist/src/*",
     "README.md"
-  ]
+  ],
+  "bugs": {
+    "url": "https://github.com/mindpath-tech/logger/issues"
+  }
 }

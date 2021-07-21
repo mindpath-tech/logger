@@ -27,9 +27,9 @@ silly: 6
 ```
 
 ### Log Providers.
-This module currently support following providers. We you can use any combination of below providers.
+This module currently support following providers. You can use any combination of below providers.
 
- - **console**: Pass log if you need logs to be print on console.
+ - **console**: Pass if you need logs to be print on console.
  - **grafana**: Pass if you want to sent logs to grafana. Grafana url is
    needed for this.
 
