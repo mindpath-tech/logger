@@ -2,6 +2,10 @@
 ## Description
 Custom logging moudle to print logs on console, file or sent it to logs visualization application such as grafana.
 
+# Dependencies
+**winston**: https://www.npmjs.com/package/winston
+**winston-loki**: https://www.npmjs.com/package/winston-loki
+
 ## Usage
 Install using npm:
 ```bash
@@ -30,8 +34,8 @@ silly: 6
 This module currently support following providers. You can use any combination of below providers.
 
  - **console**: Pass if you need logs to be print on console.
- - **grafana**: Pass if you want to sent logs to grafana. Grafana url is
-   needed for this.
+ - **grafana**: Pass if you want to sent logs to grafana using loki transport. Grafana url is
+   needed for this. 
 
 Some of the Log providers needs there configuration properties as well.  
 Follow below steps to set Log Providers in environment variable. 

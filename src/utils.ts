@@ -17,8 +17,14 @@ export function getParsedProviders(): PROVIDERS {
   ]
   if (logProviders) {
     try {
-      providers = JSON.parse(logProviders);
+      const safeLogProviders = logProviders
+        .replace(/\\/g, '') // back slash
+        .replace(/'/g, '"') // Single quote with double quote.
+        .replace(/\s/g,''); // Whitespace
+
+      providers = JSON.parse(safeLogProviders);
     } catch (error) {
+      console.log('logProviders', logProviders);
       console.log('Error while parsing log providers value. Refer readme.', error);
     }
   }
