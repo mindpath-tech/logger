@@ -1,7 +1,7 @@
 {
   "name": "@mindpath/logger",
   "title": "logger module",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Custom logging module to print logs on console, file or sent it to logs visualization application such as grafana",
   "main": "dist/src/index.js",
   "types": "dist/src/index.d.ts",
@@ -35,13 +35,13 @@
     "MindPath – Intelligent Solutions <engineering@mindpathtech.com>"
   ],
   "dependencies": {
-    "winston": "^3.3.3",
-    "winston-loki": "^6.0.1"
+    "winston": "3.3.3",
+    "winston-loki": "6.0.1"
   },
   "devDependencies": {
-    "@types/node": "^14.14.34",
-    "tslint": "^6.1.3",
-    "typescript": "^4.1.3"
+    "@types/node": "14.14.34",
+    "tslint": "6.1.3",
+    "typescript": "4.1.3"
   },
   "files": [
     "dist/src/*",
